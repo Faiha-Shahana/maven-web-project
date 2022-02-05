@@ -28,10 +28,10 @@ public class employeedetails {
 		this.employee_phone = employee_phone;
 	}
 	public String getEmplyee_pay() {
-		return emplyee_pay;
+		return employee_pay;
 	}
 	public void setEmplyee_pay(String emplyee_pay) {
-		this.emplyee_pay = emplyee_pay;
+		this.employee_pay = emplyee_pay;
 	}
 	public String getSalary_status() {
 		return salary_status;
