@@ -70,11 +70,11 @@ public class employeeDetailsServlet extends HttpServlet {
 
 private String jdbcURL = "jdbc:mysql://localhost:3306/employeedetails";
 private String jdbcUsername = "root";
-private String jdbcPassword = "tG001669";
+private String jdbcPassword = "";
 //Step 2: Prepare list of SQL prepared statements to perform CRUD to our database
-private static final String INSERT_USERS_SQL = "INSERT INTO employeeDetails" + " (employee_name, employee_phone, employee_pay, salary_status) VALUES " +
+private static final String INSERT_employeeDetails_SQL = "INSERT INTO employeeDetails" + " (employee_name, employee_phone, employee_pay, salary_status) VALUES " +
 " (?, ?, ?);";
-private static final String SELECT_USER_BY_ID = "employee_name,\r\n"
+private static final String SELECT_employeeDetails_BY_ID = "employee_name,\r\n"
 		+ "employee_phone, employee_pay, salary_status from UserDetails where name =?";
 private static final String SELECT_ALL_employeeDetails = "select * from employeeDetails ";
 private static final String DELETE_employeeDetails_SQL = "delete from employeeDetails where name = ?;";
