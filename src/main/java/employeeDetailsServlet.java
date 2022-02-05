@@ -72,13 +72,26 @@ private String jdbcURL = "jdbc:mysql://localhost:3306/employeedetails";
 private String jdbcUsername = "root";
 private String jdbcPassword = "";
 //Step 2: Prepare list of SQL prepared statements to perform CRUD to our database
-private static final String INSERT_employeeDetails_SQL = "INSERT INTO employeeDetails" + " (employee_name, employee_phone, employee_pay, salary_status) VALUES " +
+//private static final String INSERT_employeeDetails_SQL = "INSERT INTO employeeDetails (employee_name, employee_phone, employee_pay, salary_status) VALUES (?, ?, ?, ?)";
+//private static final String SELECT_employeeDetails_BY_ID = "SELECT employee_name, employee_phone, employee_pay, salary_status from employeeDetails where name =?";
+//private static final String SELECT_ALL_employeeDetails = "select * from employeeDetails ";
+//private static final String DELETE_employeeDetails_SQL = "delete from employeeDetails where name =?";
+//private static final String UPDATE_employeeDetails_SQL = "update employeeDetails set employee_name = ?, employee_phone= ?, employee_pay =?, salary_status =? where employee_name = ?";
+
+
+
+//Debug section
+private static final String INSERT_USERS_SQL = "INSERT INTO employeeDetails" + " (employee_name, employee_phone, employee_pay, salary_status) VALUES " +
 " (?, ?, ?);";
-private static final String SELECT_employeeDetails_BY_ID = "employee_name,\r\n"
+private static final String SELECT_USER_BY_ID = "employee_name,\r\n"
 		+ "employee_phone, employee_pay, salary_status from UserDetails where name =?";
 private static final String SELECT_ALL_employeeDetails = "select * from employeeDetails ";
 private static final String DELETE_employeeDetails_SQL = "delete from employeeDetails where name = ?;";
 private static final String UPDATE_employeeDetails_SQL = "update employeeDetails set employee_name = ?,employee_phone= ?, employee_pay =?,salary_status =? where employee_name = ?;";
+
+
+
+
 //Step 3: Implement the getConnection method which facilitates connection to the database via JDBC 
 
 protected Connection getConnection() {
