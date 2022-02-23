@@ -25,9 +25,10 @@ public class employeeDetailsStervlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
+     * @return 
      * @see HttpServlet#HttpServlet()
      */
-    public employeeDetails() {
+    public void employeeDetails() {
         super();
         // TODO Auto-generated constructor stub
     }

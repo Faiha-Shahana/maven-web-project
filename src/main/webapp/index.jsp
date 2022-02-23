@@ -1,20 +1,24 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Revenue Tracker</title>
 </head>
 <body>
+<form action="RegisterServlet" method="post">
+Name: <input type="text" name="employee_name">
+Phone: <input type="text" name="employee_phone">
+Pay: <input type="text" name="employee_pay">
+Status: <select name="salary_status">
+<option>Paid</option>
+<option>Still Pending</option>
+</select>
+<input type="submit" value="Update Employee" />
 
-<h1>Hello JSP and Servlet!</h1>
-<form action="HelloServlet" method="post">
-Enter your name: <input type="text" name="yourName" size="20">
-<input type="submit" value="Call Servlet" />
+
+
 </form>
-
- <button onclick="window.location.href='http://localhost:8085/lesson14/register.jsp';"> Click here to go to user registration </button>
-
 </body>
 </html>
