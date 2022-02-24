@@ -4,7 +4,7 @@ pageEncoding="ISO-8859-1"%>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Revenuee Tracker</title>
+<title>Revenueee Tracker</title>
 </head>
 <body>
 <form action="RegisterServlet" method="post">
