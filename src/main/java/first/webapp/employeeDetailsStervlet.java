@@ -29,7 +29,7 @@ public class employeeDetailsStervlet extends HttpServlet {
      * @see HttpServlet#HttpServlet()
      */
     public void employeeDetails() {
-        super();
+        //super();
         // TODO Auto-generated constructor stub
     }
 
@@ -109,7 +109,7 @@ return connection;
 private void listemployeeDetails(HttpServletRequest request, HttpServletResponse response)
 throws SQLException, IOException, ServletException
 {
-	List <employeeDetailsStervlet> employeedetails = new ArrayList <>();
+	List <employeedetails> employeedetails = new ArrayList <>();
 try (Connection connection = getConnection();
 // Step 5.1: Create a statement using connection object
 PreparedStatement preparedStatement =
@@ -123,7 +123,7 @@ String employee_phone = rs.getString("employee_phone");
 String employee_pay = rs.getString("employee_pay");
 String salary_status = rs.getString("salary_status");
 
-employeedetails.add(new employeeDetails (employee_name, employee_phone, employee_pay, salary_status));
+employeedetails.add(new employeedetails (employee_name, employee_phone, employee_pay, salary_status));
 }
 } catch (SQLException e) {
 System.out.println(e.getMessage());
